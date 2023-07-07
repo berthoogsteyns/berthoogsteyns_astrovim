@@ -21,6 +21,8 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     ["<leader>z"] = { "<cmd>ZenMode<cr>", desc = "Zen Mode" },
+    ["<S-Tab>"] = { "<cmd>bprev<cr>" },
+    ["<Tab>"] = { "<cmd>bnext<cr>" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
