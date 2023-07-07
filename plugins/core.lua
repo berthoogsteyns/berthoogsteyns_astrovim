@@ -20,6 +20,27 @@ return {
       return opts
     end,
   },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    dependencies = { "miversen33/netman.nvim" },
+    opts = {
+      sources = {
+        "filesystem",
+        "netman.ui.neo-tree",
+        "git_status",
+      },
+      filesystem = {
+        filtered_items = {
+          visible = true,
+          hide_hidden = true,
+          always_show = { ".github", ".gitignore", ".env*" },
+        },
+        hijack_netrw_behavior = "open_default",
+        -- filtered_items = {
+        -- },
+      },
+    },
+  },
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   --
