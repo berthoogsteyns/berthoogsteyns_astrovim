@@ -4,6 +4,7 @@ return {
   { import = "astrocommunity.colorscheme.gruvbox-baby" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.lua" },
   -- { import = "astrocommunity.pack.typescript" },
   -- { import = "astrocommunity.pack.docker" },
 
