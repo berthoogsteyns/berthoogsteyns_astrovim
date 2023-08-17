@@ -10,9 +10,9 @@ return {
     config.sources = {
       -- Set a formatter
       -- null_ls.builtins.formatting.rustfmt,
-      -- null_ls.builtins.formatting.stylua,
-      -- null_ls.builtins.formatting.prettierd,
-      -- null_ls.builtins.code_actions.eslint_d,
+      null_ls.builtins.formatting.stylua,
+      null_ls.builtins.formatting.prettierd,
+      null_ls.builtins.code_actions.eslint_d,
     }
     return config -- return final config table
   end,

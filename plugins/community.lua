@@ -5,8 +5,9 @@ return {
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.lua" },
-  -- { import = "astrocommunity.pack.typescript" },
-  -- { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.motion.harpoon" },
 
   -- example of imporing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity

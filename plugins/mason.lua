@@ -5,7 +5,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
-      -- ensure_installed = { "lua_ls", "tsserver", "marksman", "yamlls", "tailwindcss", "rust_analyzer" },
+      ensure_installed = { "lua_ls", "tsserver", "marksman", "yamlls", "tailwindcss" },
       -- automatic_installation = true
     },
   },
@@ -14,7 +14,7 @@ return {
     "jay-babu/mason-null-ls.nvim",
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
-      -- ensure_installed = { "prettier", "stylua" },
+      ensure_installed = { "prettier", "stylua" },
     },
   },
   {
