@@ -22,11 +22,18 @@ return { -- You can also add new plugins here as well:
       vim.g.gruvbox_flat_style = "hard"
     end,
   },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    opts = {
+      variant = "moon",
+      dark_variant = "moon",
+    },
+  },
   -- {
-  --   "mg979/vim-visual-multi",
-  -- },
-  -- {
-  --   "github/copilot.vim",
+  --   require("lazy").setup {
+  --     { "rose-pine/neovim", name = "rose-pine" },
+  --   },
   -- },
   {
     "folke/zen-mode.nvim",
@@ -81,5 +88,30 @@ return { -- You can also add new plugins here as well:
         desc = "Toggle Flash Search",
       },
     },
+  },
+  {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup {
+        -- Configuration here, or leave empty to use defaults
+      }
+    end,
+  },
+  {
+    "chipsenkbeil/distant.nvim",
+    branch = "v0.3",
+    event = "VeryLazy",
+    config = function() require("distant"):setup() end,
+  },
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {},
+  },
+  {
+    "kwakzalver/duckytype.nvim",
+    config = function() require("duckytype").setup {} end,
   },
 }
